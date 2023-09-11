@@ -25,5 +25,9 @@
   "engines": {
     "node": "^12 || ^14 || ^16 || >= 18"
   },
+  "files": [
+    "index.js",
+    "readme.markdown"
+  ],
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)"
 }
