@@ -20,6 +20,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
+        # https://github.com/npm/cli/issues/2610
+        # devDeps: it-is@1 > assertions@2.3.4 > fomatto@git://github.com/BonsaiDen/Fomatto.git
+      - name: 'git: Force https instead of ssh protocol'
+        run: 'git config --global url."https://".insteadOf ssh://'
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3
         with:
