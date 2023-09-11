@@ -8,7 +8,9 @@
     "type": "git",
     "url": "git://github.com/dominictarr/map-stream.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "readable-stream": "^3.6.0"
+  },
   "devDependencies": {
     "asynct": "*",
     "it-is": "1",

@@ -8,7 +8,7 @@ var map = require('../')
 //NOTE: simple-map.asynct.js and simple-map.asynct-native-stream.js ARE IDENTICAL EXCEPT FOR THIS REQUIRE
 //TODO: deduplicate and refactor tests
 //TODO: REFACTOR THIS TEST TO USE es.readArray and es.writeArray
-  , Stream = require('readable-stream')
+  , Stream = require('stream')
   , es = require('event-stream')
 
 function writeArray(array, stream) {

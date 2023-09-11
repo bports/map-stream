@@ -5,7 +5,7 @@
 // the most basic reduce just emits one 'data' event after it has recieved 'end'
 
 
-var Stream = require('stream').Stream
+const Stream = require('readable-stream').Stream
 
 
 //create an event stream and apply function to each .write
